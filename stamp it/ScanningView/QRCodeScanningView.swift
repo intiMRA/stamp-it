@@ -91,8 +91,9 @@ extension QRCodeScanningView {
         
         self.layer.session = captureSession
         self.layer.videoGravity = .resizeAspectFill
-        
-        captureSession?.startRunning()
+        DispatchQueue.global().async {
+            self.captureSession?.startRunning()
+        }
     }
     /// Does the initial setup for captureSession
     private func doInitialSetup() {
