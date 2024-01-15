@@ -22,6 +22,10 @@
 		A15D0C352B54BA4800F62319 /* ScanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D0C342B54BA4800F62319 /* ScanningView.swift */; };
 		A15D0C3F2B54C0D600F62319 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15D0C3E2B54C0D600F62319 /* Colors.xcassets */; };
 		A15D0C422B54C61200F62319 /* DesignLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = A15D0C412B54C61200F62319 /* DesignLibrary */; };
+		A15D0C452B54CBDF00F62319 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D0C442B54CBDF00F62319 /* Store.swift */; };
+		A15D0C472B54CC8200F62319 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D0C462B54CC8200F62319 /* Customer.swift */; };
+		A15D0C492B54CCA800F62319 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D0C482B54CCA800F62319 /* Shop.swift */; };
+		A15D0C4B2B54CE2800F62319 /* StampCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D0C4A2B54CE2800F62319 /* StampCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		A15D0C342B54BA4800F62319 /* ScanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningView.swift; sourceTree = "<group>"; };
 		A15D0C3E2B54C0D600F62319 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A15D0C402B54C4CA00F62319 /* stamp-it-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "stamp-it-Info.plist"; sourceTree = SOURCE_ROOT; };
+		A15D0C442B54CBDF00F62319 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		A15D0C462B54CC8200F62319 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		A15D0C482B54CCA800F62319 /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		A15D0C4A2B54CE2800F62319 /* StampCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StampCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,7 @@
 		A15D0C102B5499D000F62319 /* stamp it */ = {
 			isa = PBXGroup;
 			children = (
+				A15D0C432B54CBCD00F62319 /* Data */,
 				A15D0C402B54C4CA00F62319 /* stamp-it-Info.plist */,
 				A15D0C3D2B54C0C000F62319 /* Resources */,
 				A15D0C2B2B54B63900F62319 /* ScanningView */,
@@ -122,6 +131,17 @@
 				A15D0C3E2B54C0D600F62319 /* Colors.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A15D0C432B54CBCD00F62319 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A15D0C442B54CBDF00F62319 /* Store.swift */,
+				A15D0C462B54CC8200F62319 /* Customer.swift */,
+				A15D0C482B54CCA800F62319 /* Shop.swift */,
+				A15D0C4A2B54CE2800F62319 /* StampCard.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,9 +226,13 @@
 				A15D0C332B54BA1B00F62319 /* QRCodeScanningViewSwiftUI.swift in Sources */,
 				A15D0C142B5499D000F62319 /* ContentView.swift in Sources */,
 				A15D0C202B54A89100F62319 /* Destination.swift in Sources */,
+				A15D0C472B54CC8200F62319 /* Customer.swift in Sources */,
 				A15D0C122B5499D000F62319 /* stamp_itApp.swift in Sources */,
 				A15D0C2D2B54B69900F62319 /* ScanningViewModel.swift in Sources */,
 				A15D0C352B54BA4800F62319 /* ScanningView.swift in Sources */,
+				A15D0C452B54CBDF00F62319 /* Store.swift in Sources */,
+				A15D0C4B2B54CE2800F62319 /* StampCard.swift in Sources */,
+				A15D0C492B54CCA800F62319 /* Shop.swift in Sources */,
 				A15D0C2F2B54B78100F62319 /* ScanningViewModelRepository.swift in Sources */,
 				A15D0C312B54B9F200F62319 /* QRCodeScanningView.swift in Sources */,
 				A15D0C222B54ABB300F62319 /* NextView.swift in Sources */,
