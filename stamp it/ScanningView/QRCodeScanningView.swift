@@ -40,9 +40,7 @@ class QRCodeScanningView: UIView {
     
     func setup(delegate: QRCodeScanningViewDelegate) {
         self.delegate = delegate
-        DispatchQueue.global().async {
-            self.startScanning()
-        }
+        self.startScanning()
     }
 }
 
@@ -53,7 +51,9 @@ extension QRCodeScanningView {
     }
     
     func startScanning() {
-        captureSession?.startRunning()
+        DispatchQueue.global().async {
+            self.captureSession?.startRunning()
+        }
     }
     
     func stopScanning() {
