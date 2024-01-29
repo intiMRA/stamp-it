@@ -8,7 +8,7 @@
 import Foundation
 
 struct Shop: Identifiable {
-    let id: String
-    let name: String
-    let template: StampCardTemplate
+    var id: String = ""
+    var name: String = ""
+    var template: StampCardTemplate = .init()
 }

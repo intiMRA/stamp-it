@@ -8,20 +8,20 @@
 import Foundation
 
 struct StampCard: Identifiable {
-    let id: String
-    let template: StampCardTemplate
+    var id: String = ""
+    var template: StampCardTemplate = .init()
     
     struct Row {
-        let cols: [Column]
+        var cols: [Column] = []
         
         struct Column {
-            let isRewardSlot: Bool
-            let isStamped: Bool
+            var isRewardSlot: Bool = false
+            var isStamped: Bool = false
         }
     }
 }
 
 struct StampCardTemplate {
-    let numberOfRows: Int
-    let numberOfCols: Int
+    var numberOfRows: Int = 0
+    var numberOfCols: Int = 0
 }

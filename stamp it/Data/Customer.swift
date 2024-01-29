@@ -8,9 +8,9 @@
 import Foundation
 
 struct Customer: Identifiable {
-    let id: String
-    let name: String
+    var id: String = ""
+    var name: String = ""
     
-    let subscribedStores: [Store]
-    let cards: [StampCard]
+    var subscribedStores: [Store] = []
+    var cards: [StampCard] = []
 }
